@@ -1,0 +1,137 @@
+{
+    "functions": 4,
+    "classes": 1,
+    "imports": 1,
+    "total_lines": 27,
+    "code_lines": 15,
+    "blank_lines": 12,
+    "comment_lines": 0,
+    "largest_function": [
+        "factorial",
+        4
+    ],
+    "smallest_function": [
+        "add",
+        2
+    ],
+    "average_function_size": 2.5,
+    "long_functions": [],
+    "complexity": 1,
+    "rating": "Excellent",
+    "duplicate_functions": [],
+    "todo_comments": 0,
+    "fixme_comments": 0,
+    "bug_comments": 0,
+    "dependencies": [
+        "math"
+    ],
+    "unused_imports": [
+        "math"
+    ],
+    "unused_variables": [
+        "PI"
+    ],
+    "bad_function_names": [],
+    "long_functions_detected": [],
+    "missing_docstrings": [
+        "__init__",
+        "add",
+        "display",
+        "factorial"
+    ],
+    "many_argument_functions": [],
+    "nested_loop_depth": 0,
+    "empty_exception_handlers": [],
+    "global_variables": [
+        "PI"
+    ],
+    "magic_numbers": [
+        3.14,
+        5,
+        7
+    ],
+    "function_calls": {
+        "print": 2,
+        "factorial": 2,
+        "add": 1
+    },
+    "recursive_functions": [
+        "factorial"
+    ],
+    "dead_code": [],
+    "classes_without_init": [],
+    "many_method_classes": [],
+    "inheritance": [],
+    "lambda_functions": [],
+    "try_without_finally": [],
+    "hardcoded_passwords": [],
+    "large_classes": [],
+    "import_aliases": [],
+    "function_complexity": [
+        {
+            "name": "add",
+            "line": 6,
+            "complexity": 1,
+            "rating": "Simple",
+            "file": "sample_projects\\demo.py"
+        },
+        {
+            "name": "factorial",
+            "line": 10,
+            "complexity": 2,
+            "rating": "Simple",
+            "file": "sample_projects\\demo.py"
+        },
+        {
+            "name": "__init__",
+            "line": 18,
+            "complexity": 1,
+            "rating": "Simple",
+            "file": "sample_projects\\demo.py"
+        },
+        {
+            "name": "display",
+            "line": 21,
+            "complexity": 1,
+            "rating": "Simple",
+            "file": "sample_projects\\demo.py"
+        }
+    ],
+    "file_metrics": [
+        {
+            "file": "sample_projects\\demo.py",
+            "total_lines": 27,
+            "blank_lines": 12,
+            "comment_lines": 0,
+            "code_lines": 15,
+            "function_count": 4,
+            "class_count": 1,
+            "import_count": 1,
+            "total_complexity": 5,
+            "average_function_complexity": 1.25
+        }
+    ],
+    "maintainability_score": 60.08,
+    "security_report": {
+        "score": 96,
+        "rating": "Excellent",
+        "issues_found": {
+            "hardcoded_passwords": 0,
+            "empty_exception_handlers": 0,
+            "global_variables": 1,
+            "dead_code": 0,
+            "unused_variables": 1
+        }
+    },
+    "health_report": {
+        "overall_score": 84.83,
+        "grade": "B",
+        "breakdown": {
+            "complexity_score": 100,
+            "maintainability_score": 60.08,
+            "security_score": 96,
+            "cleanliness_score": 100
+        }
+    },
+    "requirements": []
+}

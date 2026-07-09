@@ -1,0 +1,553 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Code Analysis Dashboard</title>
+
+
+<style>
+
+body{
+font-family:Arial;
+background:#f4f4f4;
+margin:40px;
+}
+
+.section{
+background:white;
+padding:20px;
+margin-top:20px;
+border-radius:10px;
+box-shadow:0px 0px 10px gray;
+}
+
+h1{
+text-align:center;
+}
+
+ul{
+padding-left:20px;
+}
+
+.cards{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+margin-top:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0px 0px 10px gray;
+text-align:center;
+min-width:180px;
+flex:1;
+}
+
+.card h3{
+margin:0 0 10px 0;
+color:#555;
+}
+
+.score{
+font-size:28px;
+font-weight:bold;
+}
+
+.grade-badge{
+display:inline-block;
+margin-top:10px;
+padding:4px 12px;
+border-radius:20px;
+color:white;
+font-weight:bold;
+}
+
+.status-badge{
+display:inline-block;
+margin-top:10px;
+padding:4px 12px;
+border-radius:20px;
+background:#eee;
+font-weight:bold;
+}
+
+.badge{
+display:inline-block;
+padding:2px 8px;
+border-radius:12px;
+font-size:12px;
+margin-left:8px;
+color:white;
+}
+
+.badge-good{
+background:#2ecc71;
+}
+
+.badge-warning{
+background:#f1c40f;
+color:#333;
+}
+
+.badge-bad{
+background:#e74c3c;
+}
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+<h1>
+Code Analysis Dashboard
+</h1>
+
+
+
+<div class="cards">
+
+<div class="card">
+<h3>Overall Health</h3>
+<div class="score" style="color:#82c91e">
+84.83%
+</div>
+<div class="grade-badge" style="background:#82c91e">
+Grade B
+</div>
+</div>
+
+<div class="card">
+<h3>Maintainability</h3>
+<div class="score">60.08%</div>
+</div>
+
+<div class="card">
+<h3>Security Score</h3>
+<div class="score">96%</div>
+<div class="status-badge">Excellent</div>
+</div>
+
+<div class="card">
+<h3>Complexity Rating</h3>
+<div class="score">Excellent</div>
+</div>
+
+</div>
+
+
+
+
+<div class="section">
+
+<h2>
+Naming Convention Warnings
+</h2>
+
+<ul>
+
+<li>All function names follow snake_case.</li>
+
+</ul>
+
+</div>
+
+
+
+<div class="section">
+
+<h2>
+Functions Missing Docstrings
+</h2>
+
+<ul>
+
+<li>__init__</li><li>add</li><li>display</li><li>factorial</li>
+
+</ul>
+
+</div>
+
+
+
+<div class="section">
+
+<h2>
+Functions With Too Many Arguments
+</h2>
+
+<ul>
+
+<li>No functions exceed the argument limit.</li>
+
+</ul>
+
+</div>
+
+
+
+<div class="section">
+
+<h2>
+Unused Imports
+</h2>
+
+<ul>
+
+<li>math</li>
+
+</ul>
+
+</div>
+
+
+
+<div class="section">
+
+<h2>
+Unused Variables
+</h2>
+
+<ul>
+
+<li>PI</li>
+
+</ul>
+
+</div>
+
+
+
+<div class="section">
+
+<h2>
+Long Functions
+</h2>
+
+<ul>
+
+<li>No long functions found.</li>
+
+</ul>
+
+</div>
+
+
+
+<div class="section">
+
+<h2>
+Dependencies
+</h2>
+
+<ul>
+
+<li>math</li>
+
+</ul>
+
+</div>
+
+
+
+
+
+<div class="section">
+
+<h2>Nested Loop Analysis</h2>
+
+<p>
+<b>Maximum Loop Depth:</b>
+0
+</p>
+
+<p>
+Loop nesting is acceptable.
+</p>
+
+</div>
+
+
+
+
+
+
+<div class="section">
+
+<h2>
+Empty Exception Handlers
+</h2>
+
+<ul>
+
+<li>No empty exception handlers found.</li>
+
+</ul>
+
+</div>
+
+
+
+
+<div class="section">
+
+<h2>
+Global Variables
+</h2>
+
+<ul>
+
+<li>PI</li>
+
+</ul>
+
+</div>
+
+
+
+
+<div class="section">
+
+<h2>
+Magic Numbers
+</h2>
+
+<ul>
+
+<li>3.14</li><li>5</li><li>7</li>
+
+</ul>
+
+</div>
+
+
+
+
+<div class="section">
+
+<h2>
+Function Call Counts
+</h2>
+
+<ul>
+
+<li>print : 2</li><li>factorial : 2</li><li>add : 1</li>
+
+</ul>
+
+</div>
+
+
+
+
+<div class="section">
+
+<h2>
+Recursive Functions
+</h2>
+
+<ul>
+
+<li>factorial</li>
+
+</ul>
+
+</div>
+
+
+
+
+<!-- Lesson 63 -->
+
+<div class="section">
+
+<h2>
+Dead Code Detection
+</h2>
+
+<ul>
+
+<li>No dead code detected.</li>
+
+</ul>
+
+</div>
+
+
+
+
+
+<!-- Lesson 64 -->
+
+<div class="section">
+
+<h2>
+Classes Without __init__()
+</h2>
+
+<ul>
+
+<li>All classes have __init__() method.</li>
+
+</ul>
+
+</div>
+<div class="section">
+
+<h2>Classes With Too Many Methods</h2>
+
+<ul>
+
+<li>No large classes found.</li>
+
+</ul>
+
+</div>
+
+<div class="section">
+
+<h2>Inheritance Relationships</h2>
+
+<ul>
+
+<li>No inheritance detected.</li>
+
+</ul>
+
+</div>
+<div class="section">
+
+<h2>
+Lambda Functions
+</h2>
+
+<ul>
+
+<li>No lambda functions found.</li>
+
+</ul>
+
+</div>
+<div class="section">
+
+<h2>
+Try Blocks Without Finally
+</h2>
+
+<ul>
+
+<li>All try blocks contain finally.</li>
+
+</ul>
+
+</div>
+<div class="section">
+
+<h2>Hardcoded Passwords</h2>
+
+<ul>
+
+<li>No hardcoded passwords found.</li>
+
+</ul>
+
+</div>
+<div class="section">
+
+<h2>
+Large Classes
+</h2>
+
+<ul>
+
+<li>No large classes found.</li>
+
+</ul>
+
+</div>
+<div class="section">
+
+<h2>Import Aliases</h2>
+
+<ul>
+
+<li>No import aliases found.</li>
+
+</ul>
+
+</div>
+
+
+<!-- Lesson 70 -->
+<div class="section">
+
+<h2>Function Complexity Report</h2>
+
+<ul>
+
+<li>add (sample_projects\demo.py, line 6) — Complexity 1 <span class='badge badge-good'>Simple</span></li><li>factorial (sample_projects\demo.py, line 10) — Complexity 2 <span class='badge badge-good'>Simple</span></li><li>__init__ (sample_projects\demo.py, line 18) — Complexity 1 <span class='badge badge-good'>Simple</span></li><li>display (sample_projects\demo.py, line 21) — Complexity 1 <span class='badge badge-good'>Simple</span></li>
+
+</ul>
+
+</div>
+
+
+<!-- Lesson 71 -->
+<div class="section">
+
+<h2>File-wise Metrics</h2>
+
+<ul>
+
+<li><b>sample_projects\demo.py</b> — Lines: 27, Code: 15, Blank: 12, Comments: 0, Functions: 4, Classes: 1, Complexity: 5</li>
+
+</ul>
+
+</div>
+
+
+<!-- Lesson 76 -->
+<div class="section">
+
+<h2>Detected Third-Party Requirements</h2>
+
+<ul>
+
+<li>No third-party packages detected.</li>
+
+</ul>
+
+</div>
+
+
+<div class="section">
+
+<h2>
+Summary Chart
+</h2>
+
+
+<img src="summary_chart.png" width="600">
+
+
+</div>
+
+
+
+
+</body>
+
+
+</html>
+
